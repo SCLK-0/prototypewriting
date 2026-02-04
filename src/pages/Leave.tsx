@@ -176,7 +176,7 @@ export default function Leave() {
 
         {/* View Leave Dialog */}
         <Dialog open={showViewDialog} onOpenChange={setShowViewDialog}>
-          <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto !left-4 !right-4 !w-auto !translate-x-0 rounded-lg">
+          <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto left-4 right-4 w-auto translate-x-0 sm:left-1/2 sm:right-auto sm:w-full sm:-translate-x-1/2 rounded-lg">
             <DialogHeader className="pb-6">
               <DialogTitle className="text-2xl font-bold text-foreground">
                 Leave Application Details
@@ -245,7 +245,7 @@ export default function Leave() {
 
         {/* Add Leave Dialog */}
         <Dialog open={showAddDialog} onOpenChange={setShowAddDialog}>
-          <DialogContent className="max-w-lg max-h-[90vh] overflow-y-auto !left-4 !right-4 !w-auto !translate-x-0 rounded-lg">
+          <DialogContent className="max-w-lg max-h-[90vh] overflow-y-auto left-4 right-4 w-auto translate-x-0 sm:left-1/2 sm:right-auto sm:w-full sm:-translate-x-1/2 rounded-lg">
             <DialogHeader>
               <DialogTitle className="text-xl font-bold">Leave Application</DialogTitle>
             </DialogHeader>

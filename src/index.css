@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 40 30% 97%;
+    --foreground: 30 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 30 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 20% 15%;
+
+    --primary: 35 95% 55%;
+    --primary-foreground: 30 20% 15%;
+
+    --secondary: 40 20% 94%;
+    --secondary-foreground: 30 20% 15%;
+
+    --muted: 40 20% 94%;
+    --muted-foreground: 30 10% 45%;
+
+    --accent: 35 95% 55%;
+    --accent-foreground: 30 20% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 35 95% 55%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 30 10% 35%;
+    --sidebar-primary: 35 95% 55%;
+    --sidebar-primary-foreground: 30 20% 15%;
+    --sidebar-accent: 35 95% 95%;
+    --sidebar-accent-foreground: 30 90% 40%;
+    --sidebar-border: 40 15% 88%;
+    --sidebar-ring: 35 95% 55%;
+    --sidebar-muted: 30 10% 55%;
+  }
+
+  .dark {
+    --background: 30 15% 10%;
+    --foreground: 40 20% 95%;
+
+    --card: 30 15% 14%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 30 15% 14%;
+    --popover-foreground: 40 20% 95%;
+
+    --primary: 35 95% 55%;
+    --primary-foreground: 30 20% 15%;
+
+    --secondary: 30 14% 20%;
+    --secondary-foreground: 40 20% 95%;
+
+    --muted: 30 14% 20%;
+    --muted-foreground: 30 10% 60%;
+
+    --accent: 35 95% 55%;
+    --accent-foreground: 30 20% 15%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 14% 20%;
+    --input: 30 14% 20%;
+    --ring: 35 95% 55%;
+
+    --sidebar-background: 30 15% 12%;
+    --sidebar-foreground: 30 10% 70%;
+    --sidebar-primary: 35 95% 55%;
+    --sidebar-primary-foreground: 30 20% 15%;
+    --sidebar-accent: 35 60% 20%;
+    --sidebar-accent-foreground: 35 95% 70%;
+    --sidebar-border: 30 14% 20%;
+    --sidebar-ring: 35 95% 55%;
+    --sidebar-muted: 30 10% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
